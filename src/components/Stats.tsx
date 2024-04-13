@@ -4,15 +4,17 @@ const Stats = () => {
   return (
     <div
       id="stats"
-      className=" flex justify-center items-center flex-row flex-wrap w-full sm:mb-24 sm:mt-20 mt-6 mb-6"
+      className="flex flex-row flex-wrap items-center justify-center w-full mt-6 mb-6 sm:mb-24 sm:mt-20"
     >
       {stats.map((stat) => (
         <div
           key={stat.id}
-          className="flex-1 flex justify-center items-center flex-row m-3"
+          className="flex flex-row items-center justify-center flex-1 m-3"
         >
-          <h4 className="font-bold text-4xl text-white">{stat.value}</h4>
-          <p className=" font-semibold text-lg text-primary uppercase ml-3">
+          <h4 className="text-xl font-bold md:text-4xl text-primary">
+            {stat.value}
+          </h4>
+          <p className="ml-3 font-semibold uppercase md:text-lg text-primary/90">
             {stat.title}
           </p>
         </div>

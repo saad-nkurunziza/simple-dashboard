@@ -2,7 +2,6 @@ import {
   Billing,
   Cta,
   Features,
-  Footer,
   Hero,
   Layout,
   Navbar,
@@ -21,7 +20,6 @@ function App() {
       <Testimonials />
       <Sponsors />
       <Cta />
-      <Footer />
     </Layout>
   );
 }
